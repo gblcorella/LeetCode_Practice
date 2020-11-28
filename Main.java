@@ -16,6 +16,13 @@ public class Main {
        
        ConvertTitles ct = new ConvertTitles();
        System.out.println(ct.convertTitle(26));
+
+      int[] top = {1,1,1,2,2,3};
+      int k = 2;
+       
+      TopKFrequent topNotch = new TopKFrequent();
+        System.out.println(topNotch.topKFrequent(top, k));
+        
     }
    
     
