@@ -8,13 +8,13 @@
  *
  * @author gabecorella
  */
-public class Main {
-    
-    public static void main(String[] args){
-        
-      HappyNumber hn = new HappyNumber();
-        System.out.println(hn.happyNumber(19));
+public class GoodPairs {
+    public int goodPairs(int[] nums){
+        int count = 0; 
+        int[] freq = new int[101];
+        for(int a : nums){
+            count += freq[a]++;
+        }       
+        return count;
     }
-   
-    
 }
