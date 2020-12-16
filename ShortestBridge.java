@@ -45,7 +45,7 @@ public class ShortestBridge {
                     int x = curr[0] + dir[0];
                     int y = curr[1] + dir[1];
                     
-                    if(x > 0 && y > 0 && x < m && y < n && !visited[x][y]){
+                    if(x >= 0 && y >= 0 && x < m && y < n && !visited[x][y]){
                         if(A[x][y] == 1){
                             return bridges;
                         }
