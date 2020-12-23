@@ -12,8 +12,13 @@ public class Main {
     
     public static void main(String[] args){
         
-      HappyNumber hn = new HappyNumber();
-        System.out.println(hn.happyNumber(19));
+      
+        
+        SmallestRange sr = new SmallestRange();
+        
+        System.out.println(sr.smallestRangeII(new int[]{1,3,6}, 3)); // Return 3
+        System.out.println(sr.smallestRange(new int[]{1,3,6}, 3)); // Return 0;
+        
     }
    
     
