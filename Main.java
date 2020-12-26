@@ -12,14 +12,17 @@ public class Main {
     
     public static void main(String[] args){
         
+      // Diagonal Traverse, LeetCode Daily
       
+      
+      int[][] matrix = new int[][]
+      {
+          {1,2,3},
+          {4,5,6},
+          {7,8,9}
+      };
         
-        SmallestRange sr = new SmallestRange();
-        
-        System.out.println(sr.smallestRangeII(new int[]{1,3,6}, 3)); // Return 3
-        System.out.println(sr.smallestRange(new int[]{1,3,6}, 3)); // Return 0;
-        
+        DiagonalTraverse dt = new DiagonalTraverse();
+        System.out.println(dt.diagonalTraverse(matrix));
     }
-   
-    
 }
