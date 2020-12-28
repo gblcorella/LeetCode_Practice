@@ -121,7 +121,7 @@ public class JumpGame {
 				}
 
 				if (numVisited.contains(arr[x])) continue;
-				for (int index : map.get(arr[x])) {
+				for(int index : map.get(arr[x])) {
 					if (!indexVisited[index]) {
 						indexQueue.add(index);
 						indexVisited[index] = true;

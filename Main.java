@@ -22,7 +22,7 @@ public class Main {
           {7,8,9}
       };
         
-        DiagonalTraverse dt = new DiagonalTraverse();
-        System.out.println(dt.diagonalTraverse(matrix));
+      ReachNumber rn = new ReachNumber();
+        System.out.println(rn.reachNumber(2));
     }
 }
