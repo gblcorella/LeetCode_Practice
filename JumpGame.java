@@ -88,4 +88,49 @@ public class JumpGame {
         nums[start] = -nums[start];
         return canReach_pII(nums, start + nums[start]) || canReach_pII(nums, start - nums[start]);
     }
+    
+    // Jump IV, LeetCode 1345
+    public int minJumps(int[] arr) {
+		int len = arr.length;
+		Map<Integer, List<Integer>> map = new HashMap<>();
+		for (int i = 0; i < len; i++) {
+			map.putIfAbsent(arr[i], new ArrayList<>());
+			map.get(arr[i]).add(i);
+		}
+
+		Deque<Integer> indexQueue = new LinkedList<>();
+		boolean[] indexVisited = new boolean[len];
+		Set<Integer> numVisited = new HashSet<>();
+		indexQueue.offer(0);
+		indexVisited[0] = true;
+		int step = 0;
+
+		while (!indexQueue.isEmpty()) {
+			int size = indexQueue.size();
+			while (size-- > 0) {
+				int x = indexQueue.poll();
+				if (x == len - 1) return step;
+
+				if (x - 1 >= 0 && !indexVisited[x - 1]) {
+					indexQueue.offer(x - 1);
+					indexVisited[x - 1] = true;
+				}
+				if (x + 1 < len && !indexVisited[x + 1]) {
+					indexQueue.offer(x + 1);
+					indexVisited[x + 1] = true;
+				}
+
+				if (numVisited.contains(arr[x])) continue;
+				for (int index : map.get(arr[x])) {
+					if (!indexVisited[index]) {
+						indexQueue.add(index);
+						indexVisited[index] = true;
+					}
+				}
+				numVisited.add(arr[x]);
+			}
+			step++;
+		}
+		return -1;
+	}
 }
