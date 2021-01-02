@@ -8,6 +8,7 @@
  *
  * @author gabecorella
  */
+import java.util.*;
 public class FormConcatanation {
     public boolean canFormArray(int[] arr, int[][] pieces) {
         Map<Integer,int[]> map = new HashMap();
