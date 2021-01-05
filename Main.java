@@ -38,7 +38,10 @@ public class Main {
         secondBook[2] = "aaa";
         
         RecreateString rs = new RecreateString();
-        System.out.print(rs.method(word, book)); // Output: 2
-        System.out.print(rs.method(secondWord, secondBook)); //  Output: 4
+       // System.out.print(rs.method(word, book)); // Output: 2
+       // System.out.print(rs.method(secondWord, secondBook)); //  Output: 4
+       
+       BeautifulArrangement ba = new BeautifulArrangement();
+        System.out.println(ba.countArrangement(3));
     }
 }
