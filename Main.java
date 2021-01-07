@@ -42,6 +42,10 @@ public class Main {
        // System.out.print(rs.method(secondWord, secondBook)); //  Output: 4
        
        BeautifulArrangement ba = new BeautifulArrangement();
-        System.out.println(ba.countArrangement(3));
+       // System.out.println(ba.countArrangement(3));
+       
+       LongestSubstringWithoutRepeating leet = new LongestSubstringWithoutRepeating();
+       String test = "abcabcbb";
+        System.out.println(leet.longestSubstring(test));
     }
 }
