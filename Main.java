@@ -46,6 +46,15 @@ public class Main {
        
        LongestSubstringWithoutRepeating leet = new LongestSubstringWithoutRepeating();
        String test = "abcabcbb";
-        System.out.println(leet.longestSubstring(test));
+       //System.out.println(leet.longestSubstring(test));
+        
+        
+        String palindromeLength = "cbbd";
+        LongestPalindromicSubstring lps = new LongestPalindromicSubstring();
+       // System.out.println(lps.longestPalindromicSubstring(palindromeLength));
+       
+        int[] votes = {1, 3, 2, 3, 1, 2, 3, 3, 3};
+       ClassPresident cp = new ClassPresident();
+       System.out.print(cp.classPresident(votes));
     }
 }
