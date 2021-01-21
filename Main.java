@@ -55,6 +55,11 @@ public class Main {
        
         int[] votes = {1, 3, 2, 3, 1, 2, 3, 3, 3};
        ClassPresident cp = new ClassPresident();
-       System.out.print(cp.classPresident(votes));
+       // System.out.print(cp.classPresident(votes));
+       
+       String[] strs = new String[]{"flower","flow","flight"};
+       
+       LongestCommonPrefix lcp = new LongestCommonPrefix();
+        System.out.println(lcp.longestCommonPrefix(strs));
     }
 }
