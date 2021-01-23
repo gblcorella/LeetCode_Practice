@@ -10,6 +10,9 @@
  */
 public class LongestCommonPrefix {
     
+    
+    // Longest Common Prefix in an Array of Strings
+    // LeetCode 
     public String longestCommonPrefix(String[] s){
         if(s.length == 0) return "";
         String pre = s[0];
