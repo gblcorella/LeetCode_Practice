@@ -10,4 +10,14 @@
  */
 public class NumberOnes {
     
+    // LeetCode daily, number of ones (Bit Manipulation)
+    public int numberOnes(int n){
+        int ones = 0;
+        while(n != 0){
+            ones = ones + (n & 1);
+            n = n>>>1;
+            
+        }
+        return ones;
+    }
 }
