@@ -8,15 +8,6 @@
  *
  * @author gabecorella
  */
-public class Main {
-
-    public static void main(String[] args) {
-
-        // Diagonal Traverse, LeetCode Daily
-        int j = 0;
-    for (int i = 0; i < 100; i++) {
-    j = j++;
-    }
-    System.out.println(j);
-    }
+public class SimplifyPath {
+    
 }
