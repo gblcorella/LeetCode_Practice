@@ -18,6 +18,7 @@ public class L988 {
 
     (As a reminder, any shorter prefix of a string is lexicographically smaller: for example, "ab" is 
     lexicographically smaller than "aba".  A leaf of a node is a node that has no children.)
+    
     */
     
     public String smallestFromLeaf(TreeNode root){
